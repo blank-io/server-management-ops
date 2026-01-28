@@ -3,9 +3,9 @@
 ![Build Status](https://github.com/blank-io/server-management-ops/actions/workflows/test-scripts.yml/badge.svg)
 
 ## Overview
-This repository serves as a practical portfolio of **Systems Administration** and **DevOps** automation. It moves beyond theory to demonstrate working, production-ready code for managing Linux infrastructure.
+This repository serves as a practical portfolio of **Systems Administration** and **DevOps** automation.
 
-The project is structured into four distinct levels of complexity, evolving from basic shell scripting to full-scale container orchestration and Continuous Integration (CI/CD).
+The project is divided into four distinct levels complexity, evolving from basic shell scripting to full-scale container orchestration and Continuous Integration (CI/CD).
 
 ## Projects Included
 1. **Shell Automation**: Scripts for routine system maintenance and health checks.
