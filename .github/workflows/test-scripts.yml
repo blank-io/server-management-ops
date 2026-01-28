@@ -1,0 +1,26 @@
+name: Server Ops CI
+
+# Trigger: Run this whenever code is pushed to the 'main' branch
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-automation:
+    # Use a fresh Ubuntu server from GitHub's cloud
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Download your code onto the server
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # Step 2: Grant permission to run the script
+    - name: Make Script Executable
+      run: chmod +x 01-shell-scripting/system_health.sh
+
+    # Step 3: actually run the script
+    - name: Run System Health Check
+      run: ./01-shell-scripting/system_health.sh
