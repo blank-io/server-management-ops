@@ -23,4 +23,4 @@ jobs:
 
     # Step 3: actually run the script
     - name: Run System Health Check
-      run: ./01-shell-scripting/system_health.sh
+      run: sudo ./01-shell-scripting/system_health.sh
