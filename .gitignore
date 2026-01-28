@@ -1,0 +1,30 @@
+# General OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python (Project 3)
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.env
+
+# Logs (Project 1 & 3)
+*.log
+*.csv
+# Specifically ignore the output files from our scripts
+server_stats.csv
+system_maintenance.log
+
+# Docker (Project 4)
+# Ignore specific volume data if mapped locally
+wp-content/uploads/
+mysql-data/
+
+# Security - NEVER commit keys or passwords
+id_rsa
+*.pem
+secrets.txt
