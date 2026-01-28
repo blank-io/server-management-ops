@@ -14,6 +14,7 @@ def log_stats():
         
         while True:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            # interval=1 blocks for 1 second to calculate CPU usage
             cpu = psutil.cpu_percent(interval=1)
             memory = psutil.virtual_memory().percent
             
